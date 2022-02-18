@@ -40,6 +40,12 @@ public:
     //     this->y = y;
     //     this->z = z;
     // }
+    // Copy Constructor. Members need to be pointers?
+    // Rectangle(Rectangle& source)
+    // {
+    //     x = new int(*source.x);
+    //     
+    // }
     //Destructor
     ~Rectangle() = default;
     //Accessor methods
@@ -87,4 +93,43 @@ int main()
     return 0;
 }
 
+// class Rectangle
+// {
+//     // int x{ 1 }; // with default
+//     int* x {new int(1)};
+//     int* y {new int(1)};
+//
+// public:
+//     //Constructors (optional)
+//     Rectangle() = default;//Constructor delegation, uses the one below
+//     Rectangle(int x, int y, int z) : x(new int(x)), y(new int(y)) { }
+//     // Rectangle(int x, int y, int z)
+//     // {
+//     //     this->x = x;
+//     //     this->y = y;
+//     //     this->z = z;
+//     // }
+//     //Destructor
+//     ~Rectangle()
+//     {
+//         delete x;
+//         delete y;
+//     }
+//     //Accessor methods
+//     int getX() { return *x; }
+//     int getY();
+//     // Mutator methods
+//     void setX(int x) { *this->x = x; }
+//     //Facilitator methods
+//     int area() { return *x * *y; }
+//     // Inspector methods
+//     bool isSquare() { return *x == *y; }
+// };
+//
+//
+//
+// int Rectangle::getY()
+// {
+//     return *y;
+// }
 
