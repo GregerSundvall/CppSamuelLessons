@@ -32,9 +32,9 @@ int main(int argc, char* argv[])
         cout << bitset<8>(x) << " "<< static_cast<int>(i) << " " << hex << (x) << endl;
     }
 
-    int z = 31 | 100; // OR.  Sets to 1 where any of them is 1
-    z = 31 & 100; // AND. Sets to 1 where both have 1 in the position.
-    z = 31 ^ 100; // XOR. Sets to 1 where only one of them has a 1.
+    int z = 31 | 100; // OR.  Sets bit (to 1) where any of them is 1
+    z = 31 & 100; // AND. Sets bit where both have 1 in the position.
+    z = 31 ^ 100; // XOR. Sets bit where only one of them has a 1.
     z = ~ 100; // NOT. Flips bit.
     z <<= 4;
     cout << bitset<8>(z) << endl;
